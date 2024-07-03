@@ -58,14 +58,14 @@ const BookManager = () => {
 
   return (
     <div className='bookmanager-container'>
-      <h1>BookManager</h1>
+      <h1>Administrador</h1>
       <div className='add-book-form'>
         <h2>Agregar Nuevo Libro</h2>
         <input type='text' placeholder='Título' value={newBookTitle} onChange={(e) => setNewBookTitle(e.target.value)} />
         <input type='text' placeholder='Autor' value={newAuthorName} onChange={(e) => setNewAuthorName(e.target.value)} />
         <input type='text' placeholder='Fecha de Publicación' value={newPublicationDate} onChange={(e) => setNewPublicationDate(e.target.value)} />
         <input type='text' placeholder='URL de Portada' value={newBookCover} onChange={(e) => setNewBookCover(e.target.value)} />
-        <button onClick={handleAddBook}>Agregar</button>
+        <button className='btn-green' onClick={handleAddBook}>Agregar</button>
       </div>
 
       <ul className='book-list'>
@@ -73,11 +73,18 @@ const BookManager = () => {
           <li className='book-container' key={bookObj.id_book}>
             <h2>{bookObj.book_title}</h2>
             <img className='bookimg' src={bookObj.book_cover} alt={bookObj.book_title} />
-            <p>Author: {bookObj.author_name}</p>
-            <p>Publication Date: {bookObj.publication_date}</p>
+            <div className='autthor'>
+              
+              <p className='author1'> Author:</p><p> {bookObj.author_name}</p>
+              </div>
+              <div className='autthor'>
+
+            <p className='author1'>Publication Date:</p>
+            <p> {bookObj.publication_date}</p>
+              </div>
             <div className='book-actions'>
-              <button onClick={() => handleEditBook(bookObj.id_book)}>Editar</button>
-              <button onClick={() => handleDeleteBook(bookObj.id_book)}>Eliminar</button>
+              <button className='btn-purple' onClick={() => handleEditBook(bookObj.id_book)}>Editar</button>
+              <button className='btn-red' onClick={() => handleDeleteBook(bookObj.id_book)}>Eliminar</button>
             </div>
           </li>
         ))}

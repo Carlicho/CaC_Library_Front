@@ -1,0 +1,27 @@
+.inputBox{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 31.25rem;
+    height: 2.1375rem;
+    
+}
+
+.searchInput{
+    border: black 3px solid;
+    width: 25.25rem;
+    height: 1.9375rem;
+    padding: 0 16px;
+    border-radius: 2px;
+}
+
+.inputbtn{
+    padding: 0.5rem;
+    width: 4rem;
+    font-size: 1rem;
+    letter-spacing: 0.7px;
+    background-color: rgb(222, 222, 222);
+    border: 0.6px solid rgb(102, 102, 180);
+    border-radius: 0px 5px 0px 0px;
+    box-shadow: inset 1px 2px 2px 3px rgb(#131921   );
+}

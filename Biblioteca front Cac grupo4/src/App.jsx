@@ -1,5 +1,6 @@
 import './App.css'
 import BookManager from './components/Main/BookManager/BookManager'
+import Header from './components/Header/Header'
 
 
 
@@ -9,7 +10,9 @@ function App() {
   return (
     <div className='App-container'>
 
-      <h1>CaC Grupo4</h1>
+      <Header/>
+
+     
 
     <BookManager/>
 
