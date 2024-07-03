@@ -33,17 +33,14 @@ const BookManager = () => {
         fetchData();
         clearForm();
       })
-      .catch((error) => console.error('Error adding book:', error));
+      .catch((error) => console.error('Error handling:', error));
   };
 
   const handleEditBook = (id) => {
-    // Implementar lógica para editar el libro con el ID proporcionado
-    // Puedes abrir un modal o un formulario para editar los detalles del libro
     console.log('Edit book with ID:', id);
   };
 
   const handleDeleteBook = (id) => {
-    // Implementar lógica para eliminar el libro con el ID proporcionado
     axios.delete(`http://127.0.0.1:5000/api/books/${id}`)
       .then((response) => {
         console.log('Book deleted:', response.data);

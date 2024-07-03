@@ -1,52 +1,51 @@
 /* Estilos para el contenedor principal */
 .bookmanager-container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
   }
   
 
   .book-list {
-    margin-top: 50px;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+          margin-top: 50px;
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
     
 
   }
 
   .book-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: red;
-    width: 15rem;
-    margin-bottom: 20px;
-    padding: 10px;
-    
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: red;
+          width: 15rem;
+          margin-bottom: 20px;
+          padding: 10px;
+          border-radius: 4px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
   .book-item h2 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
   }
   
   .book-item p {
-    margin: 5px 0;
+        margin: 5px 0;
   }
   
   .bookimg {
-width: 120px;
-height: 190px;
+    width: 120px;
+    height: 190px;
   }
