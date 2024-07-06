@@ -1,15 +1,13 @@
-import "./ResultsList.css"
+import './ResultsList.css';
 
-
-const SearchResultsList = ({results = []}) => {
+const SearchResultsList = ({ results = [] }) => {
   return (
-    <div className="resultList">
-        {results.map((results,id)=>{
-            return <div key={id}>{results.name}</div>
-        })}
-        
+    <div className='resultList'>
+      {results.map((result, id) => {
+        return <div key={id}>{result.nombre}</div>; 
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default SearchResultsList
+export default SearchResultsList;

@@ -2,7 +2,7 @@
     
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border: 3px solid rgba(0, 0, 0, 0.667);
     border-radius: 5px;
@@ -11,7 +11,7 @@ background: linear-gradient(351deg, rgba(253, 253, 253, 0.762) 6%, rgba(228, 228
     box-shadow:  1px 1px 4px #707070,
              -1px -1px 3px #2a2a2a;
     margin-bottom: 23px;
-    width: 100%;
+    width: 100vw;
     height: 3.8rem;
     color: #f00a0aff;
     text-shadow:  1px 1px 1px #dfdfdf9f,
@@ -39,4 +39,5 @@ h4{
     text-decoration: none;
     letter-spacing: 2px;
     font-size: 19px;
+    margin-right: 2.25rem;
 }

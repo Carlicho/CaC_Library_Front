@@ -2,14 +2,14 @@
     display: flex;
     position: relative;
     justify-content: center;
-    width: 31.25rem;
-    height: 2.1375rem;
+    width: auto;
+    
     
 }
 
 .searchInput{
     border: black 3px solid;
-    width: 25.25rem;
+    width: 15.25rem;
     height: 1.9375rem;
     padding: 0 16px;
     border-radius: 2px;

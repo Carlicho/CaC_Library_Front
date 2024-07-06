@@ -1,7 +1,5 @@
 import React from 'react'
-import ProductCards from '../../products/ProductCard/ProductCards'
-import ProductCategories from '../../products/ProductCategories/ProductCategories'
-import ProductFilterPrice from '../../products/ProductFilterPrice/ProductFilterPrice'
+
 import styled from 'styled-components'
 
 const SearchResults = ({results}) => {
