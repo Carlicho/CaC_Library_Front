@@ -6,3 +6,27 @@
   flex-direction: column;
   background-color: #131921;
 }
+
+/* Para pantallas medianas (tablets y portátiles, 768px - 1024px) */
+@media (max-width: 1024px) {
+  .App-container {
+      justify-content: center; /* Cambiar a justificar al centro */
+      padding: 10px; /* Agregar relleno */
+  }
+}
+
+/* Para pantallas pequeñas (smartphones, 480px - 767px) */
+@media (max-width: 767px) {
+  .App-container {
+      justify-content: flex-start; /* Cambiar a justificar al inicio */
+      padding: 20px; /* Aumentar el relleno */
+  }
+}
+
+/* Para pantallas extra pequeñas (smartphones más pequeños, menos de 480px) */
+@media (max-width: 480px) {
+  .App-container {
+      justify-content: flex-start; /* Cambiar a justificar al inicio */
+      padding: 30px; /* Aumentar aún más el relleno */
+  }
+}

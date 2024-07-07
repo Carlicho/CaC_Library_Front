@@ -10,3 +10,30 @@
     font-size: 18px;
     color: #fff;
 }
+
+/* Para pantallas medianas (tablets, 768px - 1024px) */
+@media (max-width: 1024px) {
+    .LoginBtn {
+        width: 9.75rem;
+        height: 2rem;
+        font-size: 16px;
+    }
+}
+
+/* Para pantallas pequeñas (smartphones, 480px - 767px) */
+@media (max-width: 767px) {
+    .LoginBtn {
+        width: 8.75rem;
+        height: 1.75rem;
+        font-size: 14px;
+    }
+}
+
+/* Para pantallas extra pequeñas (smartphones más pequeños, menos de 480px) */
+@media (max-width: 480px) {
+    .LoginBtn {
+        width: 7.75rem;
+        height: 1.5rem;
+        font-size: 12px;
+    }
+}

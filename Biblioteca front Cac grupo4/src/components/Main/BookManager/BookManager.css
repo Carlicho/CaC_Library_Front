@@ -133,3 +133,75 @@
       position: relative;
       top: 1px;
   }
+
+/* Media Queries */
+
+/* Para pantallas grandes (escritorios grandes, 1025px y más) */
+@media (max-width: 1200px) {
+    .book-container {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Para pantallas medianas (tablets y portátiles, 768px - 1024px) */
+@media (max-width: 1024px) {
+    .bookmanager-container {
+        width: 90%;
+    }
+    .book-container {
+        width: calc(50% - 20px); /* Cada libro ocupa la mitad del ancho del contenedor menos los márgenes */
+    }
+    .book-item h2 {
+        font-size: 1.25rem;
+    }
+    .bookimg {
+        width: 7.5rem;
+        height: 10rem;
+    }
+    .btn-green, .btn-red, .btn-purple {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}
+
+/* Para pantallas pequeñas (smartphones, 480px - 767px) */
+@media (max-width: 767px) {
+    .bookmanager-container {
+        width: 95%;
+    }
+    .book-container {
+        width: calc(100% - 20px); /* Cada libro ocupa el ancho completo del contenedor menos los márgenes */
+    }
+    .book-item h2 {
+        font-size: 1.125rem;
+    }
+    .bookimg {
+        width: 6.25rem;
+        height: 8.75rem;
+    }
+    .btn-green, .btn-red, .btn-purple {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+}
+
+/* Para pantallas extra pequeñas (smartphones más pequeños, menos de 480px) */
+@media (max-width: 480px) {
+    .bookmanager-container {
+        width: 100%;
+    }
+    .book-container {
+        width: calc(100% - 10px); /* Cada libro ocupa el ancho completo del contenedor menos los márgenes */
+    }
+    .book-item h2 {
+        font-size: 1rem;
+    }
+    .bookimg {
+        width: 5rem;
+        height: 7rem;
+    }
+    .btn-green, .btn-red, .btn-purple {
+        padding: 6px 14px;
+        font-size: 10px;
+    }
+}
